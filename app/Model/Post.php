@@ -3,16 +3,13 @@
 * 
 */
 class Post extends AppModel {
-    public $name = 'Post';
-
-        public $validate = array(
+    public $validate = array(
         'title' => array(
-            'rule' => 'notEmpty'
+            'rule' => 'notBlank'
         ),
         'body' => array(
-            'rule' => 'notEmpty'
+            'rule' => 'notBlank'
         )
     );
-
 }
 
