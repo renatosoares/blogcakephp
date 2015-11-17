@@ -1,8 +1,10 @@
 <?php
 // File: /app/Controller/PostsController.php
+
 class PostsController extends AppController {
     public $helpers = array('Html', 'Form', 'Flash');
     public $components = array('Flash');
+
 
     public function index() {
         $this->set('posts', $this->Post->find('all'));
