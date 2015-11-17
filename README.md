@@ -1,3 +1,4 @@
 # Apenas um blog test
 
-### Authentication (login and logout)
+### Autenticação (login e logout)
+### Autorização (quem tem permissão para acessar o que)
