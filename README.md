@@ -1,3 +1,3 @@
-# Divertindo-se com CakePHP
+# Apenas um blog test
 
-### Bolo com café sempre é bom
+### Authentication (login and logout)
