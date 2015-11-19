@@ -2,6 +2,8 @@
 
 <h1>Blog posts</h1>
 <p><?php echo $this->Html->link('Add Post', array('action' => 'add')); ?></p>
+<p><?php echo $this->Html->link('Usuários', array('controller' => 'Users', 'action' => 'index')); ?></p>
+<?php  echo $this->Session->read('Auth.User.username'); ?>
 
 <table>
     <tr>
