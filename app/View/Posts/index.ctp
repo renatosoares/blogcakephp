@@ -7,6 +7,7 @@
 
 <table>
     <tr>
+    	<th>Autor</th>
         <th>Id</th>
         <th>Title</th>
         <th>Actions</th>
@@ -16,7 +17,22 @@
 <!-- Here's where we loop through our $posts array, printing out post info -->
 
     <?php foreach ($posts as $post): ?>
+   
+    
+    
     <tr>
+    	<td>
+    		<?php 
+    			foreach ($users as $user): 
+    				if($post['Post']['user_id'] == $user['User']['id']): 
+    					echo $user['User']['username'];  
+    					break;
+					else:
+						continue;
+					endif;
+				endforeach;
+    		?>
+    	</td>
         <td><?php echo $post['Post']['id']; ?></td>
         <td>
             <?php

@@ -1,13 +1,17 @@
 <?php
 // File: /app/Controller/PostsController.php
+//App::import('Controller', 'Users');
+
 
 class PostsController extends AppController {
     public $helpers = array('Html', 'Form', 'Flash');
     public $components = array('Flash');
-
+    
 
     public function index() {
         $this->set('posts', $this->Post->find('all'));
+        $this->loadModel('User');
+        $this->set('users', $this->User->find('all'));        
     }
 
     public function view($id) {
