@@ -1,4 +1,22 @@
 # Apenas um blog test
 
-### Autenticação (login e logout)
-### Autorização (quem tem permissão para acessar o que)
+--
+
+Dois Model, User e Post
+
+--
+
+Autenticação do usuário com senha criptografada
+
+--
+
+fazendo uso do loadModel(); para carregar o model user no PostsController.
+
+--
+
+Exibição associada do usuário do post
+
+--
+
+Nome do usuário logado
+--
